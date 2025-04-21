@@ -1,10 +1,9 @@
 describe('Register Dealls', () => {
 it('User successfully registered', () => {
-    // Load "https://job-portal-user-dev-skx7zw44dq-et.a.run.app/"
+   
     cy.visit('https://job-portal-user-dev-skx7zw44dq-et.a.run.app/');
   
-    // Resize window to 1536 x 695
-    cy.viewport(1536, 695);
+    // cy.viewport(1920, 1080);
   
     // Click on <a> "Daftar"
     cy.get('#dealls-navbar-register-btn').click();
@@ -134,6 +133,6 @@ it('User successfully registered', () => {
     cy.get('.mt-1').type('{esc}');
   
     // Validasi logo image <img> [alt="user photo"]
-    cy.get('[alt="user photo"]').trigger('mouseover');
+    cy.get('[alt="user photo"]').should('be.visible');
   });
 });

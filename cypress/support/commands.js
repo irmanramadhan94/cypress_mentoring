@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('loginSession', () => {
+    cy.session('loginSession', () => {
+        console.log('⏩ Login ulang karena session belum ada atau expired');
+        cy.visit('/');
+        cy.get('#dealls-navbar-login-btn').click();
+        cy.get('#basic_email').type('sullivanx94@gmail.com');
+        cy.get('#basic_password').type('Qwerty@12345');
+        cy.get('.border-none').click();
+        cy.get('[alt="user photo"]').should('be.visible');
+    });
+  });
