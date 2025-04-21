@@ -1,40 +1,40 @@
-# Cara Penggunaan Project Cypress
+# How to Use the Cypress Project
 
-1. **Clone Repository**
-    Clone repository ini ke komputer Anda menggunakan perintah berikut:
+1. **Clone the Repository**
+    Clone this repository to your computer using the following command:
     ```
     git clone <repository-url>
     ```
 
-2. **Masuk ke Direktori Project**
-    Pindah ke direktori project:
+2. **Navigate to the Project Directory**
+    Move to the project directory:
     ```
     cd cypress_mentoring/cypress
     ```
 
 3. **Install Dependencies**
-    Pastikan Anda sudah menginstall Node.js. Kemudian jalankan perintah berikut untuk menginstall dependencies:
+    Make sure you have Node.js installed. Then run the following command to install the dependencies:
     ```
     npm install
     ```
 
-4. **Buka Cypress**
-    Untuk membuka Cypress GUI Test Runner, jalankan perintah:
+4. **Open Cypress**
+    To open the Cypress GUI Test Runner, run the command:
     ```
     npx cypress open
     ```
 
-5. **Menjalankan Test**
-    Pilih salah satu test yang ingin dijalankan di Cypress Test Runner, atau jalankan semua test secara headless dengan perintah:
+5. **Run Tests**
+    Select a test to run in the Cypress Test Runner, or run all tests in headless mode with the following commands:
     ```
-    npx cypress run => menjalankan semua skenario yang ada di cypress/e2e
-    npx cypress run --spec "cypress/e2e/<file skenario>.cy.js" => menjalankan skenario  1 file
+    npx cypress run => runs all scenarios in cypress/e2e
+    npx cypress run --spec "cypress/e2e/<scenario file>.cy.js" => runs a single scenario file
     ```
 
-6. **Melihat Hasil Test**
-    Setelah test selesai dijalankan, Anda dapat melihat hasilnya di terminal atau membuka laporan hasil test jika tersedia.
+6. **View Test Results**
+    After the tests are completed, you can view the results in the terminal or open the test report if available.
 
-7. **Konfigurasi Tambahan**
-    Jika diperlukan, sesuaikan konfigurasi di file `cypress.config.js` sesuai kebutuhan project Anda.
+7. **Additional Configuration**
+    If needed, adjust the configuration in the `cypress.config.js` file according to your project requirements.
 
-Selamat mencoba!
+Happy testing!
