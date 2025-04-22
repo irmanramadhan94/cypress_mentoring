@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-22T12:36:06.956Z",
+    "end": "2025-04-22T12:36:47.229Z",
+    "duration": 40273,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fab9e839-0830-4054-b12f-55b4b488e452",
+      "title": "",
+      "fullFile": "cypress\\e2e\\4. mentor_profile.cy.js",
+      "file": "cypress\\e2e\\4. mentor_profile.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09d68700-1762-4b07-a015-b3a4a572ab9c",
+          "title": "Mentor Profile",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successfully views mentor details",
+              "fullTitle": "Mentor Profile Successfully views mentor details",
+              "timedOut": null,
+              "duration": 39991,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://job-portal-user-dev-skx7zw44dq-et.a.run.app');\ncy.wait(3000);\n//click menu mentor\ncy.get(':nth-child(2) > .LinkItem_navbar_link_item__Toizn > .inline-block').click();\ncy.get('#searchMentor').type(\"Bayem Sore\");\ncy.wait(3000);\n//click card mentor\ncy.get('.flex:nth-child(1) > .flex-1 > .border-b > .line-clamp-1').click();\ncy.wait(5000);\n//Assertion\ncy.contains('Bayem Sore');\n// cy.contains('Account Payable di Custom Perusahaan');\ncy.contains('University of Indonesia');\ncy.contains('Super Mentor');\n// Tab\ncy.contains('Overview');\ncy.contains('Ulasan');\n// Statistik\ncy.contains('22');\ncy.contains('Total Sessions');\ncy.contains('19');\ncy.contains('Mentees Impacted');\ncy.contains('100%');\ncy.contains('Attendance Rate');\ncy.contains('15 Hour');\ncy.contains('Response Time');\n// Topik Keahlian - Karier\ncy.contains('Career Planning');\ncy.contains('Communication Skills');\ncy.contains('Leadership & Management');\ncy.contains('Kekuasaan');\n// Topik Keahlian - Academics\ncy.contains('XL Future Leaders');\ncy.contains('ASEAN Young Leaders Program');\ncy.contains('Exchange - Canada');\ncy.contains('LPDP');\ncy.contains('Fullbright');\n// Section Perkenalan\ncy.contains('Berkenalan dengan Bayem Sore');\ncy.contains(/^s$/); // \"s\" saja sebagai teks\n// Pengalaman\ncy.contains('Pengalaman');\ncy.contains('Account Payable');\ncy.contains('Custom Perushaan');\ncy.contains('Dec 2021 – Present');\ncy.contains('2D Artist');\ncy.contains('3s Asia Bdn Shd');\ncy.contains('3D Artist');\ncy.contains('Bank Andara');\ncy.contains('Dec 2021 – Dec 2022');\n// Pendidikan\ncy.contains('Pendidikan');\ncy.contains('Bachelor (S1) of Yawa Major');\ncy.contains('University of Indonesia');\ncy.contains('2017 – 2024');\n// Tips Menjaga Diri\ncy.contains('Tips Menjaga Diri');\ncy.contains('Mentor kami tidak akan pernah meminta data pribadi');\ncy.contains('Happy Mentoring!');\n// Ajukan Jadwal\ncy.contains('Mari Adakan Sesi Mentoring Bersama');\ncy.contains('Halo, saat ini jadwal saya sudah penuh.');\ncy.contains('Ajukan Jadwal');",
+              "err": {},
+              "uuid": "ec7f583f-841a-4820-a9f1-3729225f0876",
+              "parentUUID": "09d68700-1762-4b07-a015-b3a4a572ab9c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec7f583f-841a-4820-a9f1-3729225f0876"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 39991,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

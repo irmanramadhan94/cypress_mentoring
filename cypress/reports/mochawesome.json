@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-22T12:33:56.184Z",
+    "end": "2025-04-22T12:34:35.491Z",
+    "duration": 39307,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "73c1299a-05b0-4169-b88c-822e34e01077",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1. register.cy.js",
+      "file": "cypress\\e2e\\1. register.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "81370f8a-b2ff-47cb-b354-0da41c475b97",
+          "title": "Register Dealls",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User successfully registered",
+              "fullTitle": "Register Dealls User successfully registered",
+              "timedOut": null,
+              "duration": 38654,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://job-portal-user-dev-skx7zw44dq-et.a.run.app/');\n// cy.viewport(1920, 1080);\n// Click on <a> \"Daftar\"\ncy.get('#dealls-navbar-register-btn').click();\n// Click on <a> \"Sign Up With Email\"\ncy.get('[href=\"/onboarding?step=1\"]').click();\n// Click on <input> #fullName\ncy.get('#fullName').click();\n// Fill \"Irman Ramadhan\" on <input> #fullName\ncy.get('#fullName').type(\"Irman Ramadhan\");\n// Click on <span> \"Selanjutnya\"\ncy.get('.order-1 > span').click();\n// Click on <input> #jobSearchStatus\ncy.get('#jobSearchStatus').click();\n// Click on <p> \"Actively looking for the ...\"\ncy.get('.ant-select-item-option-active .font-semibold').click();\n// Click on <input> #whatsapp\ncy.get('#whatsapp').click();\n// Fill \"6287725657897\" on <input> #whatsapp\ncy.get('#whatsapp').type(\"6287725657897\");\n// Click on <input> #email\ncy.get('#email').click();\n// Fill \"... on <input> #email\nconst randomEmail = Math.random().toString(36).substring(2, 15) + '@example.com';\ncy.get('#email').type(randomEmail);\n// Click on <input> #campus\ncy.get('#campus').click();\n// Fill \"ind\" on <input> #campus\ncy.get('#campus').type(\"Unikom\");\ncy.get('#campus').type('{enter}');\n// Click on <div> \"University of Indonesia\"\n// Click on <input> #eligibility\ncy.get('#eligibility').click();\n// Click on <div> \"4 - 5 YoE\"\ncy.get('.ant-select-item:nth-child(7) > .ant-select-item-option-content').click();\n// Click on <span> \"Selanjutnya\"\ncy.get('.order-1 > span').click();\ncy.wait(5000);\n// Click on <p> \"Skip for now, my CV is no...\"\ncy.get('.text-neutral-100:nth-child(1)').click();\n// Click on <span> \"Selanjutnya\"\ncy.get('.order-1 > span').click();\n// Click on <input> #companyName\ncy.get('#companyName').click();\n// Fill \"shope\" on <input> #companyName\ncy.get('#companyName').type(\"shope\");\n// Click on <div> \"Bank Shope\"\ncy.get('.ant-select-item-option-active > .ant-select-item-option-content').click();\n// Click on <input> #roleLevel\ncy.get('#roleLevel').click();\ncy.wait(2000);\ncy.get('#roleLevel').type(\"Director\");\ncy.wait(2000);\ncy.get('#roleLevel').type('{enter}');\n// Click on <input> #roleName\ncy.get('#roleName').click();\n// Fill \"VP Eng\" on <input> #roleName\ncy.get('#roleName').type(\"VP Eng\");\n// Click on <button> \"Add `VP Eng`\"\ncy.get('.ant-select-dropdown-empty .flex').click();\n// Click on <input> #startDate\ncy.get('#startDate').click();\n// Fill \"02/2022\" on <input> #startDate\ncy.get('#startDate').type(\"02/2022\");\n// Click on <input> #endDate\ncy.get('#endDate').click();\n// Fill \"02/2025\" on <input> #endDate\ncy.get('#endDate').type(\"02/2025\");\n// Click on <input> .ant-checkbox-input\ncy.get('.ant-checkbox-input').click();\n// Click on <span> \"Selanjutnya\"\ncy.get('.order-1 > span').click();\ncy.wait(2000);\n// Click on <span> \"Selanjutnya\"\ncy.get('.order-1 > span').click();\n// Click on <input> #password\ncy.get('#password').click();\n// Fill \"Qwerty@12345\" on <input> #password\ncy.get('#password').type(\"Qwerty@12345\");\n// Click on <input> #passwordConfirmation\ncy.get('#passwordConfirmation').click();\n// Fill \"Qwerty@12345\" on <input> #passwordConfirmation\ncy.get('#passwordConfirmation').type(\"Qwerty@12345\");\n// Click on <input> #checkPrivacyPolicy\ncy.get('#checkPrivacyPolicy').click();\n// Click on <button> \"Finish\"\ncy.get('#dealls-onboarding-finish').click();\n// Hover over <h2> \"Welcome to Dealls!\"\ncy.get('.mt-1', {\n  timeout: 10000\n}).should('be.visible');\ncy.get('.mt-1').type('{esc}');\n// Validasi logo image <img> [alt=\"user photo\"]\ncy.get('[alt=\"user photo\"]').should('be.visible');",
+              "err": {},
+              "uuid": "767d2459-e5fd-4cf3-8368-dc3b7d105d03",
+              "parentUUID": "81370f8a-b2ff-47cb-b354-0da41c475b97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "767d2459-e5fd-4cf3-8368-dc3b7d105d03"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38654,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

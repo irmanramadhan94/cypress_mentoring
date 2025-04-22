@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-22T12:34:37.062Z",
+    "end": "2025-04-22T12:34:51.909Z",
+    "duration": 14847,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1351c33b-8504-42c9-9e45-e6c77589f7c2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2. login.cy.js",
+      "file": "cypress\\e2e\\2. login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0fc255db-0fbc-447e-8125-f4ea52bb0af2",
+          "title": "Login using valid credential",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login session is created",
+              "fullTitle": "Login using valid credential Login session is created",
+              "timedOut": null,
+              "duration": 14789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://job-portal-user-dev-skx7zw44dq-et.a.run.app/');\ncy.wait(3000);\ncy.get('[alt=\"user photo\"]').should('be.visible');\n// cy.getCookie('loginSession').should('exist');",
+              "err": {},
+              "uuid": "84437af8-5aeb-47b0-b145-49066a592777",
+              "parentUUID": "0fc255db-0fbc-447e-8125-f4ea52bb0af2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84437af8-5aeb-47b0-b145-49066a592777"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14789,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-22T12:34:53.164Z",
+    "end": "2025-04-22T12:36:05.356Z",
+    "duration": 72192,
+    "testsRegistered": 7,
+    "passPercent": 14.285714285714285,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "4ca01bea-bcb4-40c7-b2ca-d4717b3584ef",
+      "title": "",
+      "fullFile": "cypress\\e2e\\3. search_mentor.cy.js",
+      "file": "cypress\\e2e\\3. search_mentor.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a259ee7e-a091-407c-83d2-a846f50830a5",
+          "title": "Search Mentor Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should search mentor by name",
+              "fullTitle": "Search Mentor Feature should search mentor by name",
+              "timedOut": null,
+              "duration": 11242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.name);\ncy.contains(filters.name);\ncy.get('#searchMentor').clear();",
+              "err": {},
+              "uuid": "ce95330c-d4c9-49a9-aa06-7c284c23b7e0",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search mentor by company",
+              "fullTitle": "Search Mentor Feature should search mentor by company",
+              "timedOut": null,
+              "duration": 60764,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.company);\ncy.wait(3000);\ncy.contains(filters.company);\ncy.get('#searchMentor').clear();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Search Mentor Feature`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Search Mentor Feature`\n    at timedOutWaitingForPageLoad (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:132767:64)\n    at <unknown> (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:133761:16)\n    at tryCatcher (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://job-portal-user-dev-skx7zw44dq-et.a.run.app/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_mentoring/./cypress/e2e/3. search_mentor.cy.js:13:7)",
+                "diff": null
+              },
+              "uuid": "01025f0d-3916-4817-b694-d83db9fa3c48",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search mentor by role",
+              "fullTitle": "Search Mentor Feature should search mentor by role",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.role);\ncy.wait(3000);\ncy.contains(filters.role);\ncy.get('#searchMentor').clear();",
+              "err": {},
+              "uuid": "c5e12f4a-1891-4cbe-a1d2-6a8d498f12ea",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search mentor by industry",
+              "fullTitle": "Search Mentor Feature should search mentor by industry",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.industry);\ncy.contains(filters.industry);\ncy.get('#searchMentor').clear();",
+              "err": {},
+              "uuid": "30ab5789-8e17-4c58-bae4-360e55988652",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search mentor by university",
+              "fullTitle": "Search Mentor Feature should search mentor by university",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.university);\ncy.wait(3000);\ncy.get('.flex:nth-child(1) > .flex-1 > .border-b > .line-clamp-1').click();\ncy.contains(filters.university);\ncy.go('back');\ncy.wait(3000);\ncy.get('#searchMentor').clear();",
+              "err": {},
+              "uuid": "fcb2f144-ad42-436b-82e7-7a3dc6cfa685",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search mentor by major",
+              "fullTitle": "Search Mentor Feature should search mentor by major",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.major);\ncy.wait(3000);\ncy.get('.flex:nth-child(1) > .flex-1 > .border-b > .line-clamp-1').click();\ncy.contains(filters.major);\ncy.go('back');\ncy.wait(3000);\ncy.get('#searchMentor').clear();",
+              "err": {},
+              "uuid": "a3b6dc86-2407-4454-bef5-42dd0127d989",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should search mentor by topic",
+              "fullTitle": "Search Mentor Feature should search mentor by topic",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchMentor').type(filters.topic);\ncy.wait(3000);\ncy.contains(filters.topic);",
+              "err": {},
+              "uuid": "b4e52407-efe6-4fc4-ad06-a1d82057ff5b",
+              "parentUUID": "a259ee7e-a091-407c-83d2-a846f50830a5",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce95330c-d4c9-49a9-aa06-7c284c23b7e0"
+          ],
+          "failures": [
+            "01025f0d-3916-4817-b694-d83db9fa3c48"
+          ],
+          "pending": [],
+          "skipped": [
+            "c5e12f4a-1891-4cbe-a1d2-6a8d498f12ea",
+            "30ab5789-8e17-4c58-bae4-360e55988652",
+            "fcb2f144-ad42-436b-82e7-7a3dc6cfa685",
+            "a3b6dc86-2407-4454-bef5-42dd0127d989",
+            "b4e52407-efe6-4fc4-ad06-a1d82057ff5b"
+          ],
+          "duration": 72006,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
